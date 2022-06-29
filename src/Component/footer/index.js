@@ -1,9 +1,9 @@
 function Footer() {
   return (
     <>
-      <footer className="mb-10 border-4">
-        <div className="">
-          <h1 className=" decoration-neutral-50">Footer</h1>
+      <footer className="h-16 p-10 bg-black">
+        <div className="flex justify-center align-bottom">
+          <h1 className= "text-2xl text-white"> @CopyWrite Information</h1>
         </div>
       </footer>
     </>

@@ -1,67 +1,84 @@
-import { cleanup } from "@testing-library/react";
-import { useEffect, useState } from "react";
 
-const Main=()=>{
-
-  //useEffect Part2
-  const [width, setwidth] = useState(window.screen.width);
-
-  const actualWidth=()=>{
-
-   setwidth(window.innerWidth);
-  }
-  useEffect(()=>{
-
-      window.addEventListener("resize",actualWidth);
-      //cleanup function
-      return ()=>{
-        window.removeEventListener("resize",actualWidth);
-      }
-    });
-  
+const Main = () => {
   return (
     <>
-    <p>The actual size of window is</p>
-      <h1>{width}</h1>
+      <div className="flex justify-center h-screen bg-cover bg-boyhand place-items-center"> */}
+  
+    
+        <div className="font-bold text-center text-violet-600 text-8xl">
+          <h1> Welcome to This Amazing WebSite</h1>
+        </div>
+       </div>
+      
     </>
-  )
-
+  );
 };
 
-//UseEffect hook part1
-// const Main = () => {
+export default Main;
 
-//   const[count,setCount]=useState(0);
+// import { cleanup } from "@testing-library/react";
+// import { useEffect, useState } from "react";
 
+// const Main=()=>{
 
-//   useEffect(()=>{
+//   //useEffect Part2
+//   const [width, setwidth] = useState(window.screen.width);
 
-//     count==0?document.title=`Clicked Times`:document.title=`Clicked ${count} Times`;
-//     // if(count==0){
-//     //   document.title=`Clicked Times`
-//     // }
-//     // else{
-//     // document.title=`Clicked ${count} Times`;
-//     // }
-//   },[count])
+//   const actualWidth=()=>{
 
-//   useEffect(()=>{
-
-//     console.log("inside another useEffects");
-
-//   },[])
-
-//   function incrementCount(){
-//     setCount(count+1);
+//    setwidth(window.innerWidth);
 //   }
+//   useEffect(()=>{
+
+//       window.addEventListener("resize",actualWidth);
+//       //cleanup function
+//       return ()=>{
+//         window.removeEventListener("resize",actualWidth);
+//       }
+//     });
+
 //   return (
 //     <>
-//     <div className="container mx-auto">
-//       <h1 className="p-2">{count}</h1>
-//       <button onClick={incrementCount} className="p-2 border-2 rounded-2xl bg-cyan-600 ">Click Me</button>
-//     </div>
+//     <p>The actual size of window is</p>
+//       <h1>{width}</h1>
 //     </>
-//   );
+//   )
+
 // };
 
-export default Main;
+// //UseEffect hook part1
+// // const Main = () => {
+
+// //   const[count,setCount]=useState(0);
+
+// //   useEffect(()=>{
+
+// //     count==0?document.title=`Clicked Times`:document.title=`Clicked ${count} Times`;
+// //     // if(count==0){
+// //     //   document.title=`Clicked Times`
+// //     // }
+// //     // else{
+// //     // document.title=`Clicked ${count} Times`;
+// //     // }
+// //   },[count])
+
+// //   useEffect(()=>{
+
+// //     console.log("inside another useEffects");
+
+// //   },[])
+
+// //   function incrementCount(){
+// //     setCount(count+1);
+// //   }
+// //   return (
+// //     <>
+// //     <div className="container mx-auto">
+// //       <h1 className="p-2">{count}</h1>
+// //       <button onClick={incrementCount} className="p-2 border-2 rounded-2xl bg-cyan-600 ">Click Me</button>
+// //     </div>
+// //     </>
+// //   );
+// // };
+
+// export default Main;

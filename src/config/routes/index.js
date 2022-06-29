@@ -7,6 +7,8 @@ import SignUp from "../../Component/SignUp";
 import Magic from "../../Component/UnControlled/index"
 import ComA from "../../Component/UseContext/ComA";
 import ToDoList from "../../Component/ToDoList";
+import Counter from "../../Component/Counter";
+import CovidData from "../../Component/Covid19Data";
 
 export const pageRoute=[
     {
@@ -52,6 +54,17 @@ export const pageRoute=[
     {
         id:"todo",
         path:"/todo",
-        component:<ToDoList/>
-    }
+        component:<ToDoList />
+    },
+    {
+        id:"counter",
+        path:"/counter",
+        component:<Counter  />
+    },
+    {
+        id:"coviddata",
+        path:"/coviddata",
+        component:<CovidData />
+    },
+    
 ]

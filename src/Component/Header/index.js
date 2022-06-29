@@ -10,18 +10,18 @@ import { FcTodoList } from "react-icons/fc";
 const Header = () => {
   return (
     <>
-      <header className="w-full p-4">
-        <div className="flex justify-around">
+      <header className="w-full p-8 bg-black">
+        <div className="flex justify-around text-white">
             
-            <div>
-              <Link to="/">Instagram</Link>
+            <div className="text-2xl font-bold text-green-50">
+              <Link to="/">DEMO APP</Link>
             </div>
-            <div className="flex justify-between p-1 border-2 border-black rounded-lg">
+            <div className="flex justify-between p-1 border-2 border-white rounded-2xl">
               <BsSearch size={19} className="mx-2 cursor-pointer" />
               <input type="text" placeholder="Search" />
             </div>
 
-            <div className="flex">
+            <div className="flex mx-4">
               <Link to='/home'><FaHome size={30} className="mx-2 cursor-pointer" /></Link>
               <Link to='/todo'><FcTodoList size={30} className="mx-2 cursor-pointer" /></Link>
               <Link to='/signup'><FaCompass size={30} className="mx-2 cursor-pointer" /></Link>
