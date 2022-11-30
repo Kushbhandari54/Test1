@@ -6,18 +6,15 @@ import { pageRoute } from "./config/routes";
 
 function App() {
   return (
-    
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
         {pageRoute.map(({ id, path, component }) => (
           <Route key={id} path={path} element={component} />
         ))}
       </Routes>
-    <Footer />
+      <Footer />
     </BrowserRouter>
-
-    
   );
 }
 

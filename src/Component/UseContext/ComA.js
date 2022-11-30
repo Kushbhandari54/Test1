@@ -1,17 +1,26 @@
-import React from "react";
 import ComB from "./ComB";
 
-const UserName=React.createContext("kush Bhandari")
-const ComA=()=>{
+import React from "react";
+import { createContext } from "react";
+const Details = [
+  {
+    FirstName: "Kush",
+    LastName: "Bhandari",
+    Age: "21",
+    College: "Dev Bhoomi",
+  },
+];
+const FirstName = createContext(Details);
 
-    return (
-        <>  
-            <UserName.Provider value={"kush Bhandari"} >
-            <ComB />
-            </UserName.Provider>
-        </>
-    )
+function ComA() {
+  return (
+    <div>
+      <FirstName.Provider value={Details[0]}>
+        <ComB />
+      </FirstName.Provider>
+    </div>
+  );
 }
 
 export default ComA;
-export { UserName } ;
+export { FirstName };

@@ -1,13 +1,13 @@
-import { useContext } from "react";
-import { UserName } from "./ComA";
+import React, { useContext } from "react";
+import { FirstName } from "./ComA";
 
-const ComC=()=>{
-    const name= useContext(UserName);
-    return (
-        <>
-            <h1>{name}</h1>
-        </>
-    )
+function ComC() {
+  const first = useContext(FirstName);
+  return (
+    <div>
+      My name is {first.FirstName} {first.LastName} {first.Age}
+    </div>
+  );
 }
 
 export default ComC;

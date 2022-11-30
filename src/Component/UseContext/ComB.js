@@ -1,12 +1,12 @@
-import ComC from "./ComC"
+import ComC from "./ComC";
+import React from "react";
 
-const ComB=()=>{
-
-    return(
-        <>
-            <ComC />
-        </>
-    )
+function ComB() {
+  return (
+    <div>
+      <ComC />
+    </div>
+  );
 }
 
 export default ComB;

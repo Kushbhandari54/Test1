@@ -8,9 +8,10 @@ import { FcTodoList } from "react-icons/fc";
 
 
 const Header = () => {
+ 
   return (
     <>
-      <header className="w-full p-8 bg-black">
+      <nav className="w-full p-8 bg-black">
         <div className="flex justify-around text-white">
             
             <div className="text-2xl font-bold text-green-50">
@@ -30,7 +31,7 @@ const Header = () => {
               
             </div>
         </div>
-      </header>
+      </nav>
     </>
   );
 };

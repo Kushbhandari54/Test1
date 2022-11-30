@@ -1,7 +1,7 @@
 import { IoAddCircleOutline } from "react-icons/io5";
 import { AiFillDelete } from "react-icons/ai";
 import { useState,useEffect } from "react";
-
+import { ImCross } from "react-icons/im";
 const getList=()=>{
   const items = JSON.parse(localStorage.getItem('toDoList'));
     if (items) {
@@ -42,7 +42,8 @@ const ToDoList = () => {
     <div className="flex items-center justify-center mb-4 ">
       <div className="p-6 border-4 shadow-lg">
         <h1 className="my-5 text-lg font-bold text-center border-b-2">
-          To Do List
+          To Do List  <ImCross />
+    
         </h1>
 
         <div className="flex justify-between my-2 border-2">

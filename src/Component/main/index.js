@@ -2,9 +2,7 @@
 const Main = () => {
   return (
     <>
-      <div className="flex justify-center h-screen bg-cover bg-boyhand place-items-center"> */}
-  
-    
+      <div className="flex justify-center h-screen bg-cover bg-boyhand place-items-center">
         <div className="font-bold text-center text-violet-600 text-8xl">
           <h1> Welcome to This Amazing WebSite</h1>
         </div>
